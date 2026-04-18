@@ -14984,3 +14984,8 @@ button.btn.btn-block.text-center.second {
 .aboutus-icon-title{
   color: #3a1566;
 }
+@media only screen and (max-width: 768px) {
+  .cancer-ribbon-block {
+    width:25% !important;
+  }
+    } 
