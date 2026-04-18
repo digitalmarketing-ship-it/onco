@@ -14984,8 +14984,68 @@ button.btn.btn-block.text-center.second {
 .aboutus-icon-title{
   color: #3a1566;
 }
-@media only screen and (max-width: 768px) {
-  .cancer-ribbon-block {
-    width:25% !important;
+@media (max-width: 767px){
+
+.banner-section-one,
+.banner-section-one .slide-item{
+    height:auto !important;
+}
+
+.banner-section-one img{
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+}
+@media (max-width: 767px){
+  .banner-img{
+width:100%;
+height:auto;
+display:block;
+}
+}
+@media (max-width:767px){
+
+.banner-section-one img{
+    width:100%;
+    height:auto;
+    object-fit:contain;
+}
+
+.banner-carousel .owl-item{
+    height:auto !important;
+}
+
+}
+@media (max-width:767px){
+.slide-item{
+height:auto;
+}
+.banner-carousel .slide-item{
+overflow:hidden;
+}
+
+.banner-carousel img{
+width:100%;
+height:auto;
+display:block;
+}
+}
+@media (max-width: 767px){
+
+.banner-carousel .owl-stage-outer,
+.banner-carousel .owl-stage,
+.banner-carousel .owl-item{
+    height:auto !important;
+}
+
+}
+.banner-carousel .slide-item{
+    line-height:0;
+}
+@media (max-width: 767px){
+  .banner-section-one{
+    padding-top:70px;
   }
-    } 
+}
