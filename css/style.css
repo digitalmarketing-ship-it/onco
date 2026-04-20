@@ -15049,3 +15049,8 @@ display:block;
     padding-top:70px;
   }
 }
+@media (max-width: 767px){
+  .cancer-ribbon-block{
+    width: 33% !important;
+  }
+}
