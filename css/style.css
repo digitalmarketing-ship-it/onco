@@ -15053,4 +15053,7 @@ display:block;
   .cancer-ribbon-block{
     width: 33% !important;
   }
+  .inner-box-ribbons h3{
+    font-size:12px !important;
+  }
 }
