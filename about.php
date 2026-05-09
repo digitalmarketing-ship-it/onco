@@ -168,7 +168,7 @@ if ($data) {
             </div>
             <div class="doctor-container">
                 <div class="row g-4">
-                    <div class="col-6 col-md-3 col-lg-3">
+                    <div class="col-6 col-md-4 col-lg-4">
                         <div class="doctor-card">
                             <img src="image_website/Dr-Satish-Sharma.jpeg" alt="Doctor">
                                 <h3>Dr Satish Sharma</h3>

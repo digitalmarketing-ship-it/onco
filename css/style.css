@@ -5501,7 +5501,7 @@ About Section Four
 
 .service-block .inner-box{
   position: relative;
-  padding: 30px 30px;
+  padding: 0px 0px;
   text-align: center;
   border-radius: 15px 15px 0 0;
   border-bottom: 3px solid transparent;
