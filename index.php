@@ -71,8 +71,8 @@
     }
 </style>
 <!-- About Section -->
-<section class="intro-section mt-5">
-    <div class="auto-container">
+<section class="intro-section mt-3">
+    <div class="container">
         <div class="row">
             <!-- Content Column -->
             <div class="content-column col-lg-6 col-md-12 col-sm-12">
@@ -597,7 +597,7 @@
             </style>
             <div class="doctor-container">
                 <div class="row g-4">
-                    <div class="col-6 col-md-3 col-lg-3">
+                    <div class="col-12 col-md-4 col-lg-4">
                         <div class="doctor-card">
                             <img src="image_website/Dr-Satish-Sharma.jpeg" alt="Doctor">
                                 <h3>Dr Satish Sharma</h3>
@@ -946,27 +946,140 @@
 
 
     <style>
-        @media only screen and (max-width: 600px) {
-            .testimonial-section {
-                padding: 20px;
-            }
-        }
+.testimonial-section{
+    overflow: hidden;
+}
+
+/* LEFT PANEL */
+
+.testimonial-left{
+    background: #03bfb3;
+    min-height: 617px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+    color: #fff;
+}
+
+.left-content{
+    max-width: 420px;
+}
+
+.sub-title{
+    font-size: 14px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.main-title{
+    font-size: 64px;
+    line-height: 1.1;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.main-title em{
+    font-style: italic;
+    font-weight: 300;
+}
+
+/* RIGHT PANEL */
+
+.testimonial-right{
+    /* background: linear-gradient(90deg,#022f31,#003e40); */
+    background-color: #3a1566;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 50px;
+    position: relative;
+}
+
+.testimonial-widget{
+    width: 100%;
+    max-width: 900px;
+    background: transparent;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* OPTIONAL:
+   make elfsight blend better */
+.testimonial-widget iframe{
+    border-radius: 20px !important;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:991px){
+
+    .testimonial-left,
+    .testimonial-right{
+        padding: 60px 35px;
+    }
+
+    .main-title{
+        font-size: 48px;
+    }
+}
+
+@media(max-width:767px){
+
+    .testimonial-left,
+    .testimonial-right{
+        min-height: auto;
+        padding: 50px 25px;
+    }
+
+    .main-title{
+        font-size: 38px;
+    }
+}
     </style>
+<section class="testimonial-section">
+    <div class="container-fluid p-0">
+        <div class="row g-0">
 
+            <!-- LEFT SIDE -->
+            <div class="col-lg-5">
+                <div class="testimonial-left">
 
-    <!-- Testimonial Section -->
-    <section class="testimonial-section">
-        <div class="auto-container">
-            <!-- Sec Title -->
-            <div class="sec-title text-center">
-                <span class="title">Don’t just take our word for it,</span>
-                <h2>Testimonials</h2>
-                <span class="divider"></span>
+                    <div class="left-content">
+                        <span class="sub-title">Testimonial</span>
+
+                        <h2 class="main-title">
+                            Real Stories <br>
+                            from Our <br>
+                            <em>Happy Patients</em>
+                        </h2>
+                    </div>
+
+                </div>
             </div>
-            <div class="elfsight-app-77fc7542-bb54-43cc-88bf-aad12858c864" data-elfsight-app-lazy></div>        </div>
-    </section>
-    <!-- End Testimonial Section -->
 
+            <!-- RIGHT SIDE -->
+            <div class="col-lg-7">
+                <div class="testimonial-right">
+
+                    <!-- Elfsight Widget -->
+                    <div class="testimonial-widget">
+                        <div class="elfsight-app-77fc7542-bb54-43cc-88bf-aad12858c864"
+                             data-elfsight-app-lazy>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+    <!-- End Testimonial Section -->
 
    
     
