@@ -697,7 +697,9 @@
 	.banner-section-one .content-outer{
 		min-height: 650px;
 	}
-
+	.banner-carousel{
+		margin-top: 66px;;
+	}
 	.banner-section-one .content-box .title{
 		font-size: 14px;
 	}
