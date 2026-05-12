@@ -1849,4 +1849,7 @@ padding: 35px 0PX;
     #img-size{
         height:260px!important;
     }
+	.cancer-ribbon-block{
+		width: 25% !important;
+	}
     }
