@@ -430,7 +430,7 @@
 
 
 
-        <div class="auto-container">
+        <div class="container">
             <div class="inner-container clearfix">
                 <div class="footer-nav">
                     <ul class="clearfix">
