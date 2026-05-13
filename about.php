@@ -15,6 +15,7 @@ if ($data) {
     }
 }
 ?>
+
 <section class="auto-container"> 
   <nav class="breadcrumb" aria-label="Breadcrumb">
     <a href="/">Home</a>

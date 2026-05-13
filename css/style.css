@@ -15893,3 +15893,6 @@ textarea.form-control {
         height:200px;
       }
     }
+    #herorow{
+      margin-left:-50% !important;
+    }

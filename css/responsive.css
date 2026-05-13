@@ -1853,3 +1853,69 @@ padding: 35px 0PX;
 		width: 25% !important;
 	}
     }
+
+	/* Abhishek hero */
+	/* ======================
+   TABLET
+====================== */
+
+@media(max-width:991px){
+
+    .hero{
+        padding: 70px 15px;
+    }
+
+    .hero .glass-card{
+        padding: 30px;
+    }
+
+    .hero-bottom-row{
+        margin-top: 35px;
+    }
+}
+
+/* ======================
+   MOBILE
+====================== */
+
+@media(max-width:767px){
+
+    .hero{
+        padding: 50px 12px;
+    }
+
+    .hero .glass-card{
+        padding: 22px;
+        border-radius: 18px;
+    }
+
+    .hero .glass-card h2{
+        font-size: 28px;
+    }
+
+    .hero .glass-card p{
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .hero-bottom-row{
+        margin-top: 25px;
+    }
+
+    .hero .inner-image img{
+        border-radius: 18px;
+    }
+
+    .hero .inner-info .box{
+        padding: 20px;
+        border-radius: 18px;
+    }
+
+    .phone-btn{
+        justify-content: center;
+        text-align: center;
+    }
+	#herorow{
+      margin-left:0% !important;
+    }
+}
