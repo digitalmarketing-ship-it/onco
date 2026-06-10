@@ -390,6 +390,23 @@
                 border-radius: 19px 5px 19px 5px;
             }
         </style>
+        <style>
+.media-img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:10px;
+    transition:0.3s;
+}
+.media-img:hover{
+    transform:scale(1.03);
+}
+
+.video-box{
+    width:100%;
+    border-radius:10px;
+}
+</style>
         <!-- Google Tag Manager (noscript) -->
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PV78DND9"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -1115,7 +1132,7 @@
   <nav class="breadcrumb" aria-label="Breadcrumb">
     <a href="/">Home</a>
     <span> › </span>
-    <span class="current">Media</span>
+    <span class="current">Gallery</span>
   </nav>
 </section>
   <section class="hero" style="
@@ -1126,7 +1143,7 @@
 ">
         <div class="container-fluid">
             <div class="glass-card">
-                <h2 class="text-dark"><strong>Media</strong></h2>
+                <h2 class="text-dark"><strong>Gallery</strong></h2>
                 <p>Orchid Samagati Cancer Centre, a state-of-the-art hospital located in the heart of Ranchi, Jharkhand, is committed to delivering exceptional medical care and treatment services. We take pride in our recognition for excellence and accreditation by NABH, NABL, and NABH for Nursing Excellence. Our premier facility provides high-quality medical care and treatment options.</p>
                 <button class="btn btn-custom" >Learn More</button>
             </div>
@@ -1158,46 +1175,121 @@
 <section class="gallery-section mt-5">
   <div class="container">
 
-    <h2 class="gallery-title">Media</h2>
+    <h2 class="gallery-title">Gallery</h2>
 
-    <div class="row g-4">
+<style>
+    .gallery-tabs{
+    gap:15px;
+}
 
-      <div class="col-lg-4 col-md-6">
-        <div class="gallery-card">
-          <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?q=80&w=1200&auto=format&fit=crop" alt="">
+.gallery-tabs .nav-link{
+    border:none;
+    border-radius:50px;
+    padding:12px 28px;
+    font-size:16px;
+    font-weight:600;
+    color:#3a1566;
+    background:#fff;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+    transition:all .3s ease;
+}
+
+.gallery-tabs .nav-link:hover{
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(58,21,102,.15);
+}
+
+.gallery-tabs .nav-link.active{
+    background:linear-gradient(135deg,#3a1566,#006881);
+    color:#fff;
+    box-shadow:0 10px 25px rgba(58,21,102,.30);
+}
+</style>
+    <!-- Tabs -->
+    <ul class="nav gallery-tabs mb-4">
+
+    <li class="nav-item">
+        <button class="nav-link active"
+            data-bs-toggle="pill"
+            data-bs-target="#photos">
+            <i class="fas fa-image me-2"></i>Photos
+        </button>
+    </li>
+
+    <li class="nav-item">
+        <button class="nav-link"
+            data-bs-toggle="pill"
+            data-bs-target="#videos">
+            <i class="fas fa-play-circle me-2"></i>Videos
+        </button>
+    </li>
+
+</ul>
+     <!-- Tab Content -->
+    <div class="tab-content">
+    <!-- Photos -->
+    <div class="tab-pane fade show active" id="photos">
+        <div class="row g-4">
+
+            <div class="col-lg-4 col-md-6">
+                <div class="gallery-card">
+                <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?q=80&w=1200&auto=format&fit=crop" alt="">
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="gallery-card">
+                <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?q=80&w=1200&auto=format&fit=crop" alt="">
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="gallery-card">
+                <img src="https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?q=80&w=1200&auto=format&fit=crop" alt="">
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="gallery-card">
+                <img src="https://images.unsplash.com/photo-1580281657527-47d7f2d8d7b3?q=80&w=1200&auto=format&fit=crop" alt="">
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="gallery-card">
+                <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1200&auto=format&fit=crop" alt="">
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="gallery-card">
+                <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?q=80&w=1200&auto=format&fit=crop" alt="">
+                </div>
+            </div>
+
         </div>
-      </div>
+    </div>
 
-      <div class="col-lg-4 col-md-6">
-        <div class="gallery-card">
-          <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?q=80&w=1200&auto=format&fit=crop" alt="">
+     <!-- Videos -->
+        <div class="tab-pane fade" id="videos">
+
+            <div class="row g-4">
+
+                <div class="col-md-6">
+                    <video controls class="video-box">
+                        <source src="https://www.youtube.com/watch?v=TOvs678W_TU" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="col-md-6">
+                    <video controls class="video-box">
+                        <source src="videos/video2.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+            </div>
+
         </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6">
-        <div class="gallery-card">
-          <img src="https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?q=80&w=1200&auto=format&fit=crop" alt="">
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6">
-        <div class="gallery-card">
-          <img src="https://images.unsplash.com/photo-1580281657527-47d7f2d8d7b3?q=80&w=1200&auto=format&fit=crop" alt="">
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6">
-        <div class="gallery-card">
-          <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1200&auto=format&fit=crop" alt="">
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6">
-        <div class="gallery-card">
-          <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?q=80&w=1200&auto=format&fit=crop" alt="">
-        </div>
-      </div>
-
     </div>
 
   </div>
