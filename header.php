@@ -727,7 +727,7 @@
                             <div class="nav-outer">
                                 <nav class="nav main-menu">
                                     <ul class="navigation" id="navbar">
-                                        <li><a href="index.php">Home</a></li>
+                                        <li><a href="home.php">Home</a></li>
 
                                         <li><a href="about.php">About Us</a></li>
 
